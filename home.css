@@ -436,6 +436,7 @@ body {
     display: flex;
     gap: 16px;
     margin-bottom: 10px;
+    margin-left: 297px;
 }
 
 .social-icons a {
