@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DU.HYPE</title>
+    <link rel="stylesheet" href="InfoProd.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home.html">
+                <img src="/Imagens/DU.HYPE logo.png" alt="Logo da Empresa">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="">MARCAS</a></li>
+            <li><a href="">CONTATO</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="🔎">
+        </div>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="main-image-box">
+                <span class="arrow left" onclick="trocarImagem(-1)">‹</span>
+                <img id="main-image" src="imagens/A3-1.webp" alt="Imagem do Tênis">
+                <span class="arrow right" onclick="trocarImagem(1)">›</span>
+            </div>
+            <div class="thumbnail-row">
+                <div class="thumbnail"><img src="imagens/A3-2.webp" alt="Miniatura 1" onclick="selecionarImagem(0)">
+                </div>
+                <div class="thumbnail"><img src="imagens/A3-3.webp" alt="Miniatura 2" onclick="selecionarImagem(1)">
+                </div>
+                <div class="thumbnail"><img src="imagens/A3-4.webp" alt="Miniatura 3" onclick="selecionarImagem(2)">
+                </div>
+                <div class="thumbnail"><img src="imagens/A3-5.webp" alt="Miniatura 4" onclick="selecionarImagem(3)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="product-title">Y-3 x adidas A3 Control White</div>
+            <div class="stars">★★★★★</div>
+            <div class="old-price">DE R$ 2.999,90</div>
+            <div class="price">R$ 2.799,99</div>
+            <div class="buttons">
+                <button class="btn-comprar">COMPRAR</button>
+                <div class="cart-icon">
+                    <img src="Imagens/carrinho.png" alt="Adicionar ao carrinho">
+                </div>
+            </div>
+
+            <div class="semelhantes">
+                <h4>PRODUTOS SEMELHANTES</h4>
+                <div class="semelhantes-container">
+                    <div class="semelhante-item"><img src="imagens/af1.webp" alt="Produto 1"></div>
+                    <div class="semelhante-item"><img src="imagens/tn.webp" alt="Produto 2"></div>
+                    <div class="semelhante-item"><img src="imagens/dunk.webp" alt="Produto 3"></div>
+                    <div class="semelhante-item"><img src="imagens/j11.webp" alt="Produto 4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article class="sobreProd">
+        <h2>Sobre o Produto</h2>
+        <p>Viaje de volta ao ano de 2002 com o Y-3 A3 Control. Esta reedição de um par de tênis clássicos incorpora um
+            elemento de amortecimento A3 no calcanhar, uma tecnologia exclusiva da adidas que antecede o Y-3. O cabedal
+            é confeccionado em couro e camurça cashmere, com forro de camurça e palmilha de mesh para proporcionar
+            conforto excepcional. O visual retrô é ancorado no presente com as Três Listras de couro com fundo refletivo
+            prateado e o logotipo Y-3 no calcanhar.
+            <br><br>
+            O Y-3 x adidas A3 Control White, lançado em 28/04/2025 na cor branco, já está disponível no Droper. Compre
+            com confiança e garantia de originalidade!
+        </p>
+    </article>
+    <script src="InfoProdAd3.js"></script>
+</body>
+
+</html>

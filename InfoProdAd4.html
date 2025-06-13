@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DU.HYPE</title>
+    <link rel="stylesheet" href="InfoProd.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home.html">
+                <img src="/Imagens/DU.HYPE logo.png" alt="Logo da Empresa">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="">MARCAS</a></li>
+            <li><a href="">CONTATO</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="🔎">
+        </div>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="main-image-box">
+                <span class="arrow left" onclick="trocarImagem(-1)">‹</span>
+                <img id="main-image" src="imagens/Ultraboost-1.webp" alt="Imagem do Tênis">
+                <span class="arrow right" onclick="trocarImagem(1)">›</span>
+            </div>
+            <div class="thumbnail-row">
+                <div class="thumbnail"><img src="imagens/Ultraboost-2.webp" alt="Miniatura 1"
+                        onclick="selecionarImagem(0)">
+                </div>
+                <div class="thumbnail"><img src="imagens/Ultraboost-3.webp" alt="Miniatura 2"
+                        onclick="selecionarImagem(1)">
+                </div>
+                <div class="thumbnail"><img src="imagens/Ultraboost-4.webp" alt="Miniatura 3"
+                        onclick="selecionarImagem(2)">
+                </div>
+                <div class="thumbnail"><img src="imagens/Ultraboost-5.webp" alt="Miniatura 4"
+                        onclick="selecionarImagem(3)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="product-title">Ultraboost 5 DNA Core Black</div>
+            <div class="stars">★★★★★</div>
+            <div class="old-price">DE R$ 699,90</div>
+            <div class="price">R$ 600,00</div>
+            <div class="buttons">
+                <button class="btn-comprar">COMPRAR</button>
+                <div class="cart-icon">
+                    <img src="Imagens/carrinho.png" alt="Adicionar ao carrinho">
+                </div>
+            </div>
+
+            <div class="semelhantes">
+                <h4>PRODUTOS SEMELHANTES</h4>
+                <div class="semelhantes-container">
+                    <a href="InfoProdAd3.html">
+                        <div class="semelhante-item"><img src="imagens/A3-0.webp" alt="Produto 1"></div>
+                    </a>
+                    <a href="InfoProd4.html">
+                        <div class="semelhante-item"><img src="imagens/tn-0.jpg" alt="Produto 2"></div>
+                    </a>
+                    <a href="InfoProdAd2.html">
+                        <div class="semelhante-item"><img src="imagens/thieves-0.webp" alt="Produto 3"></div>
+                    </a>
+                    <a href="InfoProdAd.html">
+                        <div class="semelhante-item"><img src="imagens/campus-0.webp" alt="Produto 4"></div>
+                    </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article class="sobreProd">
+        <h2>Sobre o Produto</h2>
+        <p>O Ultraboost não foi o nosso único tênis de corrida de alto desempenho que também conquistou o mundo da moda.
+            Mas é um dos mais amados. Por esse motivo, criamos o tênis Ultraboost DNA com base no modelo original mais
+            técnico. A simplicidade do design destaca a padronagem do adidas PRIMEKNIT. E como conforto nunca é demais,
+            quer você corra ou não, a entressola BOOST proporciona um retorno de energia incrível a cada passo dado.
+
+            O cabedal deste tênis é feito com fios de alta performance que contêm pelo menos 50% de Parley Ocean
+            Plastic, plástico reaproveitado interceptado em ilhas remotas, praias, comunidades costeiras e litorais,
+            evitando poluir os oceanos. Os outros 50% dos fios são de poliéster reciclado.
+
+            O adidas Ultraboost 5 DNA Core Black, lançado em 27/08/2024 na cor preto, já está disponível na Du.Hype.
+            Compre com confiança e garantia de originalidade!
+        </p>
+    </article>
+    <script src="InfoProdAd4.js"></script>
+</body>
+
+</html>
