@@ -1,19 +1,21 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(/Imagens/GOOFY.jpg);
+  /* Remova o background-image daqui */
 }
 
 body,
 html {
   height: 100%;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to top, #94a9c9, #c1d6f2);
+  background: url(./Imagens/GOOFY.jpg), linear-gradient(to top, #94a9c9, #c1d6f2);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow-x: hidden;
 }
-
 /* ======== TELA 1 - Navegação ======== */
 .background {
   height: 100vh;
