@@ -1,4 +1,4 @@
-const imagens = ['imagens/air max 90.webp', 'imagens/air max 90 - 2.webp', 'imagens/air max 90 - 3.webp', 'imagens/air max 90 - 4.webp', 'imagens/air max 90 - 5.webp'];
+const imagens = ['imagens/dunk-1.webp', 'imagens/dunk-2.webp', 'imagens/dunk-3.webp', 'imagens/dunk-4.webp', 'imagens/dunk-5.webp'];
 let indiceAtual = 0;
 
 function trocarImagem(direcao) {

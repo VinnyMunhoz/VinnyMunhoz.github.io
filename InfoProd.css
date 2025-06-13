@@ -17,6 +17,11 @@ body {
   background: #fafafa;
 }
 
+.sobreProd{
+  margin: 10px 70px 10px 110px;
+  padding: 15px;  
+}
+
 /*Menu Navegacao*/
 .navbar {
   height: 150px;
