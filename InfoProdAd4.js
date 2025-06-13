@@ -1,4 +1,4 @@
-const imagens = ['imagens/Ultraboost-1.webp', 'imagens/Ultraboost-2.webp', 'imagens/Ultraboost-3.webp', 'imagens/Ultraboost-4.webp', 'imagens/Ultraboost-5.webp'];
+const imagens = ['imagens/Ultraboost-1.jpg', 'imagens/Ultraboost-2.jpg', 'imagens/Ultraboost-3.jpg', 'imagens/Ultraboost-4.jpg', 'imagens/Ultraboost-5.jpg'];
 let indiceAtual = 0;
 
 function trocarImagem(direcao) {
