@@ -1,78 +1,149 @@
+.russo-one-regular {
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background-color: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    background-color: #fafafa;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    color: white;
 }
 
-header {
-  padding: 20px;
-  text-align: center;
+.navbar {
+    height: 150px;
+    background-image: url('/Imagens/navbarimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-family: 'Russo One', sans-serif;
 }
 
-.search-bar {
-  text-align: center;
-  margin: 20px;
+
+.logo img {
+    height: 80px;
+    width: auto;
 }
 
-.search-bar input {
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-  border-radius: 5px;
-  border: none;
-  font-size: 16px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-shadow: 3px 3px 4px black;
+}
+
+.search-box input {
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 35px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* --- Navegação por Alfabeto --- */
 .alphabet-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px 0;
+  gap: 0.75rem; /* Espaçamento entre as letras */
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #dee2e6; /* Linha divisória */
+  padding-bottom: 1.5rem;
+  width: 100%;
+  max-width: 800px;
 }
 
 .alphabet-nav a {
-  margin: 5px;
-  color: #ccc;
+  color: #6c757d; /* Cinza médio para letras */
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .alphabet-nav a:hover {
-  color: #fff;
+  background-color: #e9ecef; /* Fundo cinza claro ao passar o mouse */
+  color: #212529; /* Cor do texto escurece */
+}
+
+/* --- Grade de Marcas --- */
+.brands-grid {
+  width: 100%;
+  max-width: 800px;
 }
 
 .brand-section {
-  padding: 20px;
+  margin-bottom: 2.5rem;
 }
 
 .brand-section h2 {
-  border-bottom: 1px solid #444;
-  padding-bottom: 5px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #495057; /* Cinza escuro para a letra da seção */
+  border-bottom: 1px solid #e9ecef; /* Linha divisória sutil */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .brand-list {
-  columns: 2;
-  column-gap: 40px;
+  padding-left: 0; /* Remove padding padrão da lista */
+  list-style: none;
+  columns: 2; /* Mantém as duas colunas em telas maiores */
+  column-gap: 2rem;
 }
 
 .brand-list li {
-  list-style: none;
-  margin: 8px 0;
+  margin-bottom: 0.75rem;
 }
 
 .brand-list li a {
-  color: #aaa;
+  color: #495057; /* Cor padrão para os links das marcas */
   text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
 }
 
 .brand-list li a:hover {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
 }
 
+/* --- Responsividade para Telas Pequenas --- */
 @media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+  
   .brand-list {
     columns: 1;
   }

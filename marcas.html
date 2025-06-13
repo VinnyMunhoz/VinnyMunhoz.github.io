@@ -1,71 +1,109 @@
-<!-- HTML (index.html) -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylemarcas.css">
 </head>
 <body>
-  <header>
-    <h1>Todas as Marcas</h1>
-  </header>
+  <header class="navbar">
+    <div class="logo">
+        <a href="home.html"><img src="Imagens/DU.HYPE logo.png" alt="DU.HYPE Logo"></a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="marcas.html">MARCAS</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+    </ul>
+    <div class="search-box">
+        <input type="text" placeholder="🔎">
+    </div>
+</header>
 
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Buscar marcas..." onkeyup="filterBrands()">
-  </div>
-
-  <div class="alphabet-nav">
+  <nav class="alphabet-nav">
     <a href="#A">A</a>
     <a href="#B">B</a>
     <a href="#C">C</a>
-  </div>
+    <a href="#D">D</a>
+    </nav>
 
-<div class="brand-section" id="A">
-  <h2>A</h2>
-  <ul class="brand-list">
-    <li><a href="home.html#adidash">Adidas</a></li>
-    <li><a href="home.html#asidash">ASICS</a></li>
-    <li><a href="#">A Bathing Ape</a></li>
-    <li><a href="#">Aime Leon Dore</a></li>
-    <li><a href="#">AND1</a></li>
-  </ul>
-</div>
+  <main class="brands-grid">
+    <div class="brand-section" id="A">
+      <h2>A</h2>
+      <ul class="brand-list">
+        <li><a href="home.html#adidash">Adidas</a></li>
+        <li><a href="home.html#asidash">ASICS</a></li>
+        <li><a href="#">A Bathing Ape</a></li>
+        <li><a href="#">Aime Leon Dore</a></li>
+        <li><a href="#">AND1</a></li>
+      </ul>
+    </div>
 
-<div class="brand-section" id="B">
-  <h2>B</h2>
-  <ul class="brand-list">
-    <li><a href="#">Balenciaga</a></li>
-    <li><a href="#">Bad Bunny</a></li>
-    <li><a href="#">Brooks</a></li>
-    <li><a href="#">Bucketfeet</a></li>
-    <li><a href="#">BAPE STA</a></li>
-  </ul>
-</div>
+    <div class="brand-section" id="B">
+      <h2>B</h2>
+      <ul class="brand-list">
+        <li><a href="#">Balenciaga</a></li>
+        <li><a href="#">Bad Bunny</a></li>
+        <li><a href="#">Brooks</a></li>
+        <li><a href="#">Bucketfeet</a></li>
+        <li><a href="#">BAPE STA</a></li>
+      </ul>
+    </div>
 
-<div class="brand-section" id="C">
-  <h2>C</h2>
-  <ul class="brand-list">
-    <li><a href="#">Converse</a></li>
-    <li><a href="#">Common Projects</a></li>
-    <li><a href="#">Cole Haan</a></li>
-    <li><a href="#">Champion</a></li>
-    <li><a href="#">Clearweather</a></li>
-  </ul>
-</div>
+    <div class="brand-section" id="C">
+      <h2>C</h2>
+      <ul class="brand-list">
+        <li><a href="#">Converse</a></li>
+        <li><a href="#">Common Projects</a></li>
+        <li><a href="#">Cole Haan</a></li>
+        <li><a href="#">Champion</a></li>
+        <li><a href="#">Clearweather</a></li>
+      </ul>
+    </div>
 
-<div class="brand-section" id="D">
-  <h2>D</h2>
-  <ul class="brand-list">
-    <li><a href="#">Diadora</a></li>
-    <li><a href="#">Dolce & Gabbana</a></li>
-    <li><a href="#">DC Shoes</a></li>
-    <li><a href="#">DVS</a></li>
-    <li><a href="#">Dior</a></li>
-  </ul>
-</div>
+    <div class="brand-section" id="D">
+      <h2>D</h2>
+      <ul class="brand-list">
+        <li><a href="#">Diadora</a></li>
+        <li><a href="#">Dolce & Gabbana</a></li>
+        <li><a href="#">DC Shoes</a></li>
+        <li><a href="#">DVS</a></li>
+        <li><a href="#">Dior</a></li>
+      </ul>
+    </div>
+  </main>
 
-  <script src="scriptmarcas.js"></script>
+  <script>
+    // O seu script JS para a busca continua o mesmo
+    function filterBrands() {
+      let input = document.getElementById('searchInput');
+      let filter = input.value.toUpperCase();
+      let main = document.querySelector('.brands-grid');
+      let sections = main.getElementsByClassName('brand-section');
+
+      for (let i = 0; i < sections.length; i++) {
+        let ul = sections[i].getElementsByTagName("ul")[0];
+        let li = ul.getElementsByTagName('li');
+        let sectionVisible = false;
+        for (let j = 0; j < li.length; j++) {
+          let a = li[j].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[j].style.display = "";
+            sectionVisible = true;
+          } else {
+            li[j].style.display = "none";
+          }
+        }
+        // Se nenhuma marca na seção corresponde, esconde a seção inteira
+        if(sectionVisible) {
+          sections[i].style.display = "";
+        } else {
+          sections[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 </body>
 </html>
