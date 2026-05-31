@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import {
-  ArrowLeftRight, ShoppingCart, CreditCard, Package, Settings2,
+  ArrowLeftRight, ShoppingCart, CreditCard,
   Search, Filter, Download, ChevronLeft, ChevronRight,
 } from 'lucide-react';
 import { useStore } from '../store/useStore';

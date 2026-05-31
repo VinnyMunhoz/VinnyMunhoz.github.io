@@ -517,7 +517,7 @@ export const mockExpenses: Expense[] = [
     date: daysAgo(9),
     category: 'Energia',
     supplier: 'CEMIG',
-    paymentMethod: 'Débito Automático',
+    paymentMethod: 'Cartão Débito',
     notes: 'Conta de luz - parte proporcional da impressora',
   },
   {
@@ -608,7 +608,7 @@ export const mockExpenses: Expense[] = [
     date: daysAgo(38),
     category: 'Energia',
     supplier: 'CEMIG',
-    paymentMethod: 'Débito Automático',
+    paymentMethod: 'Cartão Débito',
     notes: 'Conta de luz abril',
   },
   {

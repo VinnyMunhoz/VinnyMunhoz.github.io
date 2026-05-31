@@ -4,8 +4,9 @@ import {
   ArrowUpRight, ArrowDownRight,
 } from 'lucide-react';
 import {
-  LineChart, Line, AreaChart, Area, PieChart, Pie, Cell,
+  AreaChart, Area, PieChart, Pie, Cell,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
+  Line,
 } from 'recharts';
 import { useStore } from '../store/useStore';
 import {

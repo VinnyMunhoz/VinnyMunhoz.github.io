@@ -61,7 +61,6 @@ export default function AIAssistant() {
     }
 
     if (q.includes('r$ 19') || q.includes('vale a pena') || q.includes('19,90')) {
-      const avgCost = topProducts.reduce((s, p) => s + (p.revenue / Math.max(p.units, 1) * 0.3), 0) / Math.max(topProducts.length, 1);
       return `Análise de viabilidade para vender a R$ 19,90:\n\n**Cenário típico para produto pequeno:**\n• Custo de produção estimado: R$ 4,00–6,00\n• Embalagem: R$ 1,00–2,00\n• Taxa marketplace (12-14%): R$ 2,39–2,79\n• **Lucro estimado: R$ 9,11–13,51**\n• **Margem estimada: 46–68%**\n\n✅ **Conclusão:** Sim, vale a pena se o custo de produção ficar abaixo de R$ 7,50. Para maximizar o retorno:\n1. Prefira marketplaces com taxas menores (TikTok Shop: 10%)\n2. Agrupe em packs (3 por R$ 49,90 = melhor conversão)\n3. Negocie frete incluso para aumentar conversão`;
     }
 

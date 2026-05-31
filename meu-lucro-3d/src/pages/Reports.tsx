@@ -32,13 +32,6 @@ export default function Reports() {
   const marketplaceData = getMarketplaceData(sales);
   const topProducts = getTopProducts(sales);
 
-  const totalSales = sales.length;
-  const avgTicket = totalSales > 0 ? revenue / Math.max(sales.filter((s) => {
-    const d = new Date(s.date);
-    const now = new Date('2026-05-31');
-    return d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth();
-  }).length, 1) : 0;
-
   return (
     <div className="space-y-6 animate-fade-in">
       {/* Header */}
